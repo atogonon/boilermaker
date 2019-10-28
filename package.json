@@ -2,11 +2,11 @@
   "name": "boilermaker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./server/server.js",
-    "start-dev": "webpack -w & nodemon ./server/server.js"
+    "start": "node server",
+    "start-dev": "webpack -w & nodemon server"
   },
   "author": "",
   "license": "ISC",
