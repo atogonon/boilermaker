@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha ./tests/*.spec.js --compilers js:babel-register",
     "start": "node main",
     "start-dev": "webpack -w & nodemon main"
   },
@@ -35,8 +35,15 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "babel-loader": "^8.0.6",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
     "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "mocha": "^6.2.2",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.11.0",
     "style-loader": "^1.0.0",
+    "supertest": "^4.0.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9"
   }
