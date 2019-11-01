@@ -1,4 +1,9 @@
 const db = require('./server/db/database.js');
+
+if (process.env.NODE_ENV === 'development') {
+  require('./secrets')
+}
+
 const app = require('./server');
 const port = process.env.PORT || 3000;
 
